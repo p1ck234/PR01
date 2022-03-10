@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PR01"
         mc:Ignorable="d"
-       Title="MainWindow" Height="450" Width="450" ResizeMode="NoResize">
+       Title="Добавление сотрудника" Height="450" Width="450" ResizeMode="NoResize" 
+       WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -24,7 +25,11 @@
         <TextBlock Grid.Row="0" Grid.Column="0" Text="Идентификатор*" 
                    FontSize="20"
                    FontWeight="Bold" VerticalAlignment="Center"
-                   HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                   HorizontalAlignment="Right" Margin="0,0,10,0">
+            <TextBlock.ToolTip>
+                <ToolTip Content="Обязательно к заполнению"/>
+            </TextBlock.ToolTip>
+        </TextBlock>
         <TextBox Name="tbID" PreviewTextInput="TbID_PreviewTextInput"
                  Grid.Row="0" Grid.Column="1" 
                  VerticalAlignment="Center"
@@ -33,20 +38,36 @@
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Фамилия*" 
                    FontSize="20"
                    FontWeight="Bold" VerticalAlignment="Center"
-                   HorizontalAlignment="Right" Margin="0,0,10,0" />
+                   HorizontalAlignment="Right" Margin="0,0,10,0" >
+            <TextBlock.ToolTip>
+                <ToolTip Content="Обязательно к заполнению"/>
+            </TextBlock.ToolTip>
+        </TextBlock>
         <TextBox Name="tbSurName" PreviewTextInput="TbSurName_PreviewTextInput" 
                  Grid.Row="1" Grid.Column="1" 
                  VerticalAlignment="Center"
                  HorizontalAlignment="Left" Margin="10,0,0,0"
-                 Width="175" Height="30" FontSize="20"/>
+                 Width="175" Height="30" FontSize="20">
+            <TextBox.ToolTip>
+                <ToolTip Content="Фамилия должна начинаться с заглавной буквы"/>
+            </TextBox.ToolTip>
+        </TextBox>
         <TextBlock Grid.Row="2" Grid.Column="0" Text="Имя*" 
                    FontSize="20"
                    FontWeight="Bold" VerticalAlignment="Center"
-                   HorizontalAlignment="Right" Margin="0,0,10,0" />
+                   HorizontalAlignment="Right" Margin="0,0,10,0">
+            <TextBlock.ToolTip>
+                <ToolTip Content="Обязательно к заполнению"/>
+            </TextBlock.ToolTip>
+        </TextBlock>
         <TextBox Name="tbName" PreviewTextInput="TbName_PreviewTextInput" 
                  Grid.Row="2" Grid.Column="1" VerticalAlignment="Center"
                  HorizontalAlignment="Left" Margin="10,0,0,0"
-                 Width="175" Height="30" FontSize="20"/>
+                 Width="175" Height="30" FontSize="20">
+            <TextBox.ToolTip>
+                <ToolTip Content="Имя должно начинаться с заглавной буквы"/>
+            </TextBox.ToolTip>
+        </TextBox>
         <TextBlock Grid.Row="3" Grid.Column="0" Text="Отчество" 
                    FontSize="20"
                    FontWeight="Bold" VerticalAlignment="Center"
@@ -54,37 +75,64 @@
         <TextBox Name="tbPatro" PreviewTextInput="TbPatro_PreviewTextInput" 
                  Grid.Row="3" Grid.Column="1" VerticalAlignment="Center"
                  HorizontalAlignment="Left" Margin="10,0,0,0"
-                 Width="175" Height="30" FontSize="20"/>
-        <TextBlock Grid.Row="4" Grid.Column="0" Text="Паспорт 
-                   (серия, номер)*" 
+                 Width="175" Height="30" FontSize="20">
+            <TextBox.ToolTip>
+                <ToolTip Content="Отчество должна начинаться с заглавной буквы"/>
+            </TextBox.ToolTip>
+        </TextBox>
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Паспорт*" 
                    FontSize="20" TextWrapping="Wrap"
                    FontWeight="Bold" VerticalAlignment="Center"
-                   HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                   HorizontalAlignment="Right" Margin="0,0,10,0">
+            <TextBlock.ToolTip>
+                <ToolTip Content="Обязательно к заполнению"/>
+            </TextBlock.ToolTip>
+        </TextBlock>
         <TextBox Name="tbPassport1" 
                  PreviewTextInput="TbPassport1_PreviewTextInput" 
                  Grid.Row="4" Grid.Column="1" VerticalAlignment="Center"
                  HorizontalAlignment="Left" Margin="10,0,0,0"
-                 Width="50" Height="30" FontSize="20"/>
+                 Width="50" Height="30" FontSize="20">
+            <TextBox.ToolTip>
+                <ToolTip Content="Серия"/>
+            </TextBox.ToolTip>
+        </TextBox>
         <TextBox Name="tbPassport2" 
                  PreviewTextInput="TbPassport2_PreviewTextInput" 
                  Grid.Row="4" Grid.Column="1" VerticalAlignment="Center"
                  HorizontalAlignment="Right" Margin="0,0,38,0"
-                 Width="100" Height="30" FontSize="20"/>
+                 Width="100" Height="30" FontSize="20">
+            <TextBox.ToolTip>
+                <ToolTip Content="Номер"/>
+            </TextBox.ToolTip>
+        </TextBox>
         <TextBlock Grid.Row="5" Grid.Column="0" Text="Моб. телефон" FontSize="20"
                    FontWeight="Bold" VerticalAlignment="Center"
                    HorizontalAlignment="Right" Margin="0,0,10,0" />
         <TextBox Name="tbNumber" PreviewTextInput="TbNumber_PreviewTextInput" 
                  Grid.Row="5" Grid.Column="1" VerticalAlignment="Center"
                  HorizontalAlignment="Left" Margin="10,0,0,0"
-                 Width="175" Height="30" FontSize="20"/>
+                 Width="175" Height="30" FontSize="20">
+            <TextBox.ToolTip>
+                <ToolTip Content="Номер начинается с 8, либо +7"/>
+            </TextBox.ToolTip>
+        </TextBox>
         <TextBlock Grid.Row="6" Grid.Column="0" Text="Email*" 
                    FontSize="20"
                    FontWeight="Bold" VerticalAlignment="Center"
-                   HorizontalAlignment="Right" Margin="0,0,10,0" />
+                   HorizontalAlignment="Right" Margin="0,0,10,0" >
+            <TextBlock.ToolTip>
+                <ToolTip Content="Обязательно к заполнению"/>
+            </TextBlock.ToolTip>
+        </TextBlock>
         <TextBox Name="tbEmail" PreviewTextInput="TbEmail_PreviewTextInput" 
                  Grid.Row="6" Grid.Column="1" VerticalAlignment="Center"
                  HorizontalAlignment="Left" Margin="10,0,0,0"
-                 Width="125" Height="30" FontSize="20"/>
+                 Width="125" Height="30" FontSize="20">
+            <TextBox.ToolTip>
+                <ToolTip Content="Начинается только с буквы латинского алфавита"/>
+            </TextBox.ToolTip>
+        </TextBox>
         <TextBlock Grid.Row="6" Grid.Column="1" Text="@firma.ru"
                    FontSize="18" VerticalAlignment="Center"
                    HorizontalAlignment="Right" Margin="0,0,3,0"/>
