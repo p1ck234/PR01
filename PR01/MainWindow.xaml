@@ -78,7 +78,7 @@
                  HorizontalAlignment="Left" Margin="10,0,0,0"
                  Width="175" Height="30" FontSize="20">
             <TextBox.ToolTip>
-                <ToolTip Content="Отчество должна начинаться с заглавной буквы"/>
+                <ToolTip Content="Отчество должно начинаться с заглавной буквы"/>
             </TextBox.ToolTip>
         </TextBox>
         <TextBlock Grid.Row="4" Grid.Column="0" Text="Паспорт*" 
