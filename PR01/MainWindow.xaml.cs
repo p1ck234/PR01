@@ -115,7 +115,22 @@ namespace PR01
 
         private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
+            string path = @"C:\Users\danil\Desktop\employee.txt";
             List<string> employeeList = new List<string>();
+            employeeList.Add(tbID.Text);
+            employeeList.Add($"{tbSurName.Text} {tbName.Text} {tbPatro.Text}");
+            employeeList.Add($"{tbPassport1.Text} {tbPassport2.Text}");
+            employeeList.Add(tbNumber.Text);
+            employeeList.Add($"{tbEmail.Text}@firma.ru");
+            using (StreamWriter sw = new StreamWriter(path,true))
+            {
+                foreach (var akk in employeeList)
+                {
+                    sw.WriteLineAsync(akk.ToString());
+                }
+                sw.WriteLine("\n");
+                sw.Close();
+            }
         }
     }
 }
