@@ -142,7 +142,6 @@ namespace PR01
                     string temp = $"Идентификатор: {tbID.Text}\t";
                     if (tbID.Text != "")
                     {
-                        //if (employeeTXT.Contains(temp))
                         if (employeeTXT.Exists(s => s.Contains(temp) == true))
                         {
                             errors.AppendLine("Идентификатор уже занят");

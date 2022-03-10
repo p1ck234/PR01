@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PR01"
         mc:Ignorable="d"
-       Title="Добавление сотрудника" Height="450" Width="450" ResizeMode="NoResize" 
-       WindowStartupLocation="CenterScreen">
+       Title="Добавление сотрудника" Height="450" Width="450" 
+       ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -43,7 +43,8 @@
                 <ToolTip Content="Обязательно к заполнению"/>
             </TextBlock.ToolTip>
         </TextBlock>
-        <TextBox Name="tbSurName" PreviewTextInput="TbSurName_PreviewTextInput" 
+        <TextBox Name="tbSurName" 
+                 PreviewTextInput="TbSurName_PreviewTextInput" 
                  Grid.Row="1" Grid.Column="1" 
                  VerticalAlignment="Center"
                  HorizontalAlignment="Left" Margin="10,0,0,0"
@@ -145,5 +146,4 @@
                 VerticalAlignment="Center" HorizontalAlignment="Left"
                 Width="100" Height="30" Margin="10,0,0,0"/>
     </Grid>
-
 </Window>
