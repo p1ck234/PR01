@@ -21,8 +21,12 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" Grid.Column="0" Text="Идентификатор*" 
+        <TextBlock Grid.ColumnSpan="2" Text="Добавление сотрудника"
+                   VerticalAlignment="Center" HorizontalAlignment="Center"
+                   FontSize="20" FontWeight="Black"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Идентификатор*" 
                    FontSize="20"
                    FontWeight="Bold" VerticalAlignment="Center"
                    HorizontalAlignment="Right" Margin="0,0,10,0">
@@ -31,11 +35,11 @@
             </TextBlock.ToolTip>
         </TextBlock>
         <TextBox Name="tbID" PreviewTextInput="TbID_PreviewTextInput"
-                 Grid.Row="0" Grid.Column="1" 
+                 Grid.Row="1" Grid.Column="1" 
                  VerticalAlignment="Center"
                  HorizontalAlignment="Left" Margin="10,0,0,0"
                  Width="175" Height="30" FontSize="20"/>
-        <TextBlock Grid.Row="1" Grid.Column="0" Text="Фамилия*" 
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Фамилия*" 
                    FontSize="20"
                    FontWeight="Bold" VerticalAlignment="Center"
                    HorizontalAlignment="Right" Margin="0,0,10,0" >
@@ -45,7 +49,7 @@
         </TextBlock>
         <TextBox Name="tbSurName" 
                  PreviewTextInput="TbSurName_PreviewTextInput" 
-                 Grid.Row="1" Grid.Column="1" 
+                 Grid.Row="2" Grid.Column="1" 
                  VerticalAlignment="Center"
                  HorizontalAlignment="Left" Margin="10,0,0,0"
                  Width="175" Height="30" FontSize="20">
@@ -53,7 +57,7 @@
                 <ToolTip Content="Фамилия должна начинаться с заглавной буквы"/>
             </TextBox.ToolTip>
         </TextBox>
-        <TextBlock Grid.Row="2" Grid.Column="0" Text="Имя*" 
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Имя*" 
                    FontSize="20"
                    FontWeight="Bold" VerticalAlignment="Center"
                    HorizontalAlignment="Right" Margin="0,0,10,0">
@@ -62,26 +66,26 @@
             </TextBlock.ToolTip>
         </TextBlock>
         <TextBox Name="tbName" PreviewTextInput="TbName_PreviewTextInput" 
-                 Grid.Row="2" Grid.Column="1" VerticalAlignment="Center"
+                 Grid.Row="3" Grid.Column="1" VerticalAlignment="Center"
                  HorizontalAlignment="Left" Margin="10,0,0,0"
                  Width="175" Height="30" FontSize="20">
             <TextBox.ToolTip>
                 <ToolTip Content="Имя должно начинаться с заглавной буквы"/>
             </TextBox.ToolTip>
         </TextBox>
-        <TextBlock Grid.Row="3" Grid.Column="0" Text="Отчество" 
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Отчество" 
                    FontSize="20"
                    FontWeight="Bold" VerticalAlignment="Center"
                    HorizontalAlignment="Right" Margin="0,0,10,0" />
         <TextBox Name="tbPatro" PreviewTextInput="TbPatro_PreviewTextInput" 
-                 Grid.Row="3" Grid.Column="1" VerticalAlignment="Center"
+                 Grid.Row="4" Grid.Column="1" VerticalAlignment="Center"
                  HorizontalAlignment="Left" Margin="10,0,0,0"
                  Width="175" Height="30" FontSize="20">
             <TextBox.ToolTip>
                 <ToolTip Content="Отчество должно начинаться с заглавной буквы"/>
             </TextBox.ToolTip>
         </TextBox>
-        <TextBlock Grid.Row="4" Grid.Column="0" Text="Паспорт*" 
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Паспорт*" 
                    FontSize="20" TextWrapping="Wrap"
                    FontWeight="Bold" VerticalAlignment="Center"
                    HorizontalAlignment="Right" Margin="0,0,10,0">
@@ -91,7 +95,7 @@
         </TextBlock>
         <TextBox Name="tbPassport1" 
                  PreviewTextInput="TbPassport1_PreviewTextInput" 
-                 Grid.Row="4" Grid.Column="1" VerticalAlignment="Center"
+                 Grid.Row="5" Grid.Column="1" VerticalAlignment="Center"
                  HorizontalAlignment="Left" Margin="10,0,0,0"
                  Width="50" Height="30" FontSize="20">
             <TextBox.ToolTip>
@@ -100,25 +104,25 @@
         </TextBox>
         <TextBox Name="tbPassport2" 
                  PreviewTextInput="TbPassport2_PreviewTextInput" 
-                 Grid.Row="4" Grid.Column="1" VerticalAlignment="Center"
+                 Grid.Row="5" Grid.Column="1" VerticalAlignment="Center"
                  HorizontalAlignment="Right" Margin="0,0,38,0"
                  Width="100" Height="30" FontSize="20">
             <TextBox.ToolTip>
                 <ToolTip Content="Номер"/>
             </TextBox.ToolTip>
         </TextBox>
-        <TextBlock Grid.Row="5" Grid.Column="0" Text="Моб. телефон" FontSize="20"
+        <TextBlock Grid.Row="6" Grid.Column="0" Text="Моб. телефон" FontSize="20"
                    FontWeight="Bold" VerticalAlignment="Center"
                    HorizontalAlignment="Right" Margin="0,0,10,0" />
         <TextBox Name="tbNumber" PreviewTextInput="TbNumber_PreviewTextInput" 
-                 Grid.Row="5" Grid.Column="1" VerticalAlignment="Center"
+                 Grid.Row="6" Grid.Column="1" VerticalAlignment="Center"
                  HorizontalAlignment="Left" Margin="10,0,0,0"
                  Width="175" Height="30" FontSize="20">
             <TextBox.ToolTip>
                 <ToolTip Content="Номер начинается с 8, либо +7"/>
             </TextBox.ToolTip>
         </TextBox>
-        <TextBlock Grid.Row="6" Grid.Column="0" Text="Email*" 
+        <TextBlock Grid.Row="7" Grid.Column="0" Text="Email*" 
                    FontSize="20"
                    FontWeight="Bold" VerticalAlignment="Center"
                    HorizontalAlignment="Right" Margin="0,0,10,0" >
@@ -127,22 +131,22 @@
             </TextBlock.ToolTip>
         </TextBlock>
         <TextBox Name="tbEmail" PreviewTextInput="TbEmail_PreviewTextInput" 
-                 Grid.Row="6" Grid.Column="1" VerticalAlignment="Center"
+                 Grid.Row="7" Grid.Column="1" VerticalAlignment="Center"
                  HorizontalAlignment="Left" Margin="10,0,0,0"
                  Width="125" Height="30" FontSize="20">
             <TextBox.ToolTip>
                 <ToolTip Content="Начинается только с буквы латинского алфавита"/>
             </TextBox.ToolTip>
         </TextBox>
-        <TextBlock Grid.Row="6" Grid.Column="1" Text="@firma.ru"
+        <TextBlock Grid.Row="7" Grid.Column="1" Text="@firma.ru"
                    FontSize="18" VerticalAlignment="Center"
                    HorizontalAlignment="Right" Margin="0,0,3,0"/>
         <Button Name="btnSave" Click="BtnSave_Click" Content="Сохранить" 
-                Grid.Row="7" Grid.Column="0"
+                Grid.Row="8" Grid.Column="0"
                 VerticalAlignment="Center" HorizontalAlignment="Right"
                 Width="100" Height="30" Margin="0,0,10,0"/>
         <Button Name="btnClose" Click="BtnClose_Click" Content="Выход" 
-                Grid.Row="7" Grid.Column="1"
+                Grid.Row="8" Grid.Column="1"
                 VerticalAlignment="Center" HorizontalAlignment="Left"
                 Width="100" Height="30" Margin="10,0,0,0"/>
     </Grid>
