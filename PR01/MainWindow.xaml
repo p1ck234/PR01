@@ -7,6 +7,13 @@
         mc:Ignorable="d"
        Title="Добавление сотрудника" Height="450" Width="450" 
        ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF99D9EA" Offset="1"/>
+            <GradientStop Color="#FFFFF200" Offset="0"/>
+            <GradientStop Color="#FF22B14C" Offset="0.5"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -25,7 +32,8 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.ColumnSpan="2" Text="Добавление сотрудника"
                    VerticalAlignment="Center" HorizontalAlignment="Center"
-                   FontSize="20" FontWeight="Black"/>
+                   FontSize="20" FontWeight="Black" 
+                   FontFamily="Comic Sans MS"/>
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Идентификатор*" 
                    FontSize="20"
                    FontWeight="Bold" VerticalAlignment="Center"
@@ -139,7 +147,7 @@
             </TextBox.ToolTip>
         </TextBox>
         <TextBlock Grid.Row="7" Grid.Column="1" Text="@firma.ru"
-                   FontSize="18" VerticalAlignment="Center"
+                   FontSize="16" VerticalAlignment="Center"
                    HorizontalAlignment="Right" Margin="0,0,3,0"/>
         <Button Name="btnSave" Click="BtnSave_Click" Content="Сохранить" 
                 Grid.Row="8" Grid.Column="0"
