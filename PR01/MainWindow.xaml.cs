@@ -217,11 +217,22 @@ namespace PR01
                     {
                         if ((number[0] == '+' && number.Length == 12) || (number[0] == '8' && number.Length == 11))
                         {
-                            employeeList.Add($"Мобильный телефон: {tbNumber.Text}\t");
-                        }
-                        else
-                        {
-                            errors.AppendLine("Номер телефона указан неверно");
+                            bool k = false;
+                            for (int i = 1; i < number.Length; i++)
+                            {
+                                if (number[i] == '+')
+                                {
+                                    errors.AppendLine("Номер телефона указан неверно");
+                                }
+                                else
+                                {
+                                    k = true;
+                                }
+                            }
+                            if (k == true)
+                            {
+                                employeeList.Add($"Мобильный телефон: {tbNumber.Text}\t");
+                            }
                         }
                     }
                     else
@@ -261,9 +272,9 @@ namespace PR01
                     {
                         foreach (var akk in employeeList)
                         {
-                            sw.WriteAsync($"{akk.ToString()}");
+                            sw.Write($"{akk.ToString()}");
                         }
-                        sw.Write("\n");
+                        sw.WriteLine();
                         sw.Close();
                     }
                     MessageBox.Show("Данные сохранены в файл",
