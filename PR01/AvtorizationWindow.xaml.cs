@@ -44,15 +44,13 @@ namespace PR01
             }
             if (counter >= 3)
             {
+                MessageBox.Show("Вы ввели 3 раза неправильно данные! \nПодождите 1 минуту.");
                 timer = new System.Windows.Threading.DispatcherTimer();
                 timer.Tick += new EventHandler(timer_Tick);
                 timer.Interval = new TimeSpan(0, 0, 60);
                 btnEnter.Visibility = Visibility.Hidden;
                 timer.Start();
             }
-
-
-
         }
         private void timer_Tick(object sender, EventArgs e)
         {
