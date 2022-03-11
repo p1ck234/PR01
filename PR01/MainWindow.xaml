@@ -36,8 +36,8 @@
                HorizontalAlignment="Left" Margin="5"/>
         <TextBlock Grid.ColumnSpan="2" Text="Добавление сотрудника"
                    VerticalAlignment="Center" HorizontalAlignment="Center"
-                   FontSize="20" FontWeight="Black" 
-                   FontFamily="Comic Sans MS"/>
+                   FontSize="20" FontWeight="Bold" FontStyle="Oblique" 
+                   FontFamily="Comic Sans MS" />
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Идентификатор*" 
                    FontSize="20"
                    FontWeight="Bold" VerticalAlignment="Center"

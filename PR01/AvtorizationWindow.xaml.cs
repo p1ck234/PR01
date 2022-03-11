@@ -36,6 +36,9 @@ namespace PR01
             if (tbLogin.Text == Login && pbPass.Password == Pass)
             {
                 MessageBox.Show("Вы вошли");
+                MainWindow mw = new MainWindow();
+                mw.Show();
+                this.Close();
             }
             else
             {
