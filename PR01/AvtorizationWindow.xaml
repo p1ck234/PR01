@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PR01"
         mc:Ignorable="d"
+        Icon="Resources/Picture.ico"
         Title="Окно авторизации" Height="300" Width="300" 
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
@@ -25,7 +26,7 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Image Source="Resources/Picture.png" Width="50" Height="50"
+        <Image Source="Resources/Picture.png" Width="40" Height="40"
                Grid.Row="0" Grid.Column="0" VerticalAlignment="Top"
                HorizontalAlignment="Left" Margin="5"/>
         <TextBlock Text="Авторизация" Grid.ColumnSpan="2"
