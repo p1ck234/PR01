@@ -152,7 +152,7 @@
         </TextBox>
         <TextBlock Grid.Row="7" Grid.Column="1" Text="@firma.ru"
                    FontSize="16" VerticalAlignment="Center"
-                   HorizontalAlignment="Right" Margin="0,0,3,0"/>
+                   HorizontalAlignment="Right" Margin="3,0,3,0"/>
         <Button Name="btnSave" Click="BtnSave_Click" Content="Сохранить" 
                 Grid.Row="8" Grid.Column="0"
                 VerticalAlignment="Center" HorizontalAlignment="Right"
