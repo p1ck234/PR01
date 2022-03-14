@@ -47,6 +47,7 @@ namespace PR01
             }
             if (counter >= 3)
             {
+                counter = 0;
                 MessageBox.Show("Вы ввели 3 раза неправильно данные! \nПодождите 1 минуту.");
                 timer = new System.Windows.Threading.DispatcherTimer();
                 timer.Tick += new EventHandler(timer_Tick);
