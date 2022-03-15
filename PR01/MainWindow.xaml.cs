@@ -234,6 +234,10 @@ namespace PR01
                                 employeeList.Add($"Мобильный телефон: {tbNumber.Text}\t");
                             }
                         }
+                        else
+                        {
+                            errors.AppendLine("Номер телефона указан неверно");
+                        }
                     }
                     else
                     {
